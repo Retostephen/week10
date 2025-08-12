@@ -9,7 +9,7 @@ orders = [
 for order in orders:
 	if order["total_price"] > 500:
 		break
-	if 140 <= order["total_price"]  <= 200:
+	if order["total_price"] >=140 and order["total_price"]  <= 200:
 		continue
 	if order["items"] >= 5:
-		print(order["customer"], order["total_price"])
+		print(f"Name: {order['customer']}, Total Price: {order['total_price']}")
