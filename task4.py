@@ -1,3 +1,4 @@
+'''
 orders = [
 	{"order_id": 101, "customer": "John", "items": 3, "total_price":75},
 	{"order_id": 102, "customer": "Mary", "items": 10, "total_price": 180},
@@ -13,3 +14,15 @@ for order in orders:
 		continue
 	if order["items"] >= 5:
 		print(f"Name: {order['customer']}, Total Price: {order['total_price']}")
+'''
+
+posts = [
+{"post": "greet"},
+{"post": "welcome"},
+{"post": "log_out"}
+]
+
+for post in posts:
+	if post["post"] == "welcome":
+		print(post["post"])
+
