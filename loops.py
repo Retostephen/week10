@@ -28,12 +28,13 @@ for i in range (1, 101):
 
 names = ["Tom", "Jerry", "Mimi", "Val"]
 
-user_name = input("UserName\n>>>")
+user_name = input("UserName\n>>>").lower
 flag = False
 for name in names:
-if user_name == name:
-		flag = True
+	if user_name == name:
+		flag = True	
 		break
+
 if flag == True:
 	print("VIP")
 else:
